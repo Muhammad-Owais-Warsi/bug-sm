@@ -1,0 +1,249 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [],
+				"name": "BountyAvailed",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [],
+				"name": "BountyCreated",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "BountyIdToAvailer",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "BountyIdToIndex",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "id",
+						"type": "string"
+					},
+					{
+						"internalType": "string[]",
+						"name": "links",
+						"type": "string[]"
+					},
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "cid",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "size",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct users_info.File[]",
+						"name": "documents",
+						"type": "tuple[]"
+					}
+				],
+				"name": "avail",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "availers",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "availer",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "bounties",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "id",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "title",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "description",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "creator",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "isAvailed",
+						"type": "bool"
+					},
+					{
+						"internalType": "address",
+						"name": "availer",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "id",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "title",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "description",
+						"type": "string"
+					},
+					{
+						"internalType": "string[]",
+						"name": "links",
+						"type": "string[]"
+					},
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "cid",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "size",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct users_info.File[]",
+						"name": "documents",
+						"type": "tuple[]"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "create",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/users/users_info.sol": "users_info"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/users/users_info.sol": {
+			"keccak256": "0xf9a57a2102e5e7afe508ebf74df39d6ba979ef9b776a8107fd589d65e6f9e6b5",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://ee05d7c88d8b8a8dd44615d6b5e2bed9a0ea4906d9403e9f82370d578d435c34",
+				"dweb:/ipfs/QmZSfDBVfnu2pmy83JYnsUMoo1f8YxSFAk4xexJQu1vthN"
+			]
+		}
+	},
+	"version": 1
+}
