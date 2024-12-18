@@ -66,23 +66,6 @@
 						"internalType": "string[]",
 						"name": "links",
 						"type": "string[]"
-					},
-					{
-						"components": [
-							{
-								"internalType": "string",
-								"name": "cid",
-								"type": "string"
-							},
-							{
-								"internalType": "uint256",
-								"name": "size",
-								"type": "uint256"
-							}
-						],
-						"internalType": "struct users_info.File[]",
-						"name": "documents",
-						"type": "tuple[]"
 					}
 				],
 				"name": "avail",
@@ -181,23 +164,6 @@
 						"type": "string[]"
 					},
 					{
-						"components": [
-							{
-								"internalType": "string",
-								"name": "cid",
-								"type": "string"
-							},
-							{
-								"internalType": "uint256",
-								"name": "size",
-								"type": "uint256"
-							}
-						],
-						"internalType": "struct users_info.File[]",
-						"name": "documents",
-						"type": "tuple[]"
-					},
-					{
 						"internalType": "uint256",
 						"name": "amount",
 						"type": "uint256"
@@ -237,11 +203,11 @@
 	},
 	"sources": {
 		"contracts/users/users_info.sol": {
-			"keccak256": "0xf9a57a2102e5e7afe508ebf74df39d6ba979ef9b776a8107fd589d65e6f9e6b5",
+			"keccak256": "0xf6e0135d4a811cb73a049a604a36020230d886ae66b8afa3b486ce1ea37b2039",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://ee05d7c88d8b8a8dd44615d6b5e2bed9a0ea4906d9403e9f82370d578d435c34",
-				"dweb:/ipfs/QmZSfDBVfnu2pmy83JYnsUMoo1f8YxSFAk4xexJQu1vthN"
+				"bzz-raw://1b95a02aca15e16cec3a8684213d7cce60d75b1c4f02411040b9e4775bd34dab",
+				"dweb:/ipfs/QmYG2rnzRjN9ifQ5Ltheuq5AeinZQoNn4CjGXnvCrtYxPx"
 			]
 		}
 	},

@@ -17,8 +17,7 @@ contract users_info {
         string id;
         string title;           
         string description;        
-        string[] links;         
-        File[] documents;       
+        string[] links;              
         uint256 amount;         
         address creator;     
         bool isAvailed;   
@@ -41,8 +40,7 @@ contract users_info {
         string memory id,
         string memory title,
         string memory description,
-        string[] memory links, 
-        File[] memory documents,
+        string[] memory links,     
         uint256 amount
     ) public {
 
@@ -62,10 +60,6 @@ contract users_info {
             newBounty.links.push(links[i]);
         }
 
-        for(uint256 i = 0; i < documents.length; i++) {
-            newBounty.documents.push(documents[i]);
-        }
-
         BountyIdToIndex[id] = bounties.length;
 
         // In frontend make use of zustand and store the details, whenever this is emitted update it.
@@ -76,8 +70,7 @@ contract users_info {
 
     function avail(
         string memory id,
-        string[] memory links,
-        File[] memory documents
+        string[] memory links
     ) public {
 
         // Never be mapped with 0.         
@@ -98,10 +91,6 @@ contract users_info {
 
         for(uint256 i = 0; i<links.length; i++) {
             newAvailer.links.push(links[i]);
-        }
-
-        for(uint256 i = 0; i<documents.length; i++) {
-            newAvailer.documents.push(documents[i]);
         }
 
         // changing state of bounty
