@@ -6,34 +6,16 @@
 	"output": {
 		"abi": [
 			{
-				"anonymous": false,
-				"inputs": [],
-				"name": "BountyAvailed",
-				"type": "event"
-			},
-			{
-				"anonymous": false,
-				"inputs": [],
-				"name": "BountyCreated",
-				"type": "event"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "string",
-						"name": "",
+						"name": "id",
 						"type": "string"
 					}
 				],
-				"name": "BountyIdToAvailer",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
+				"name": "Apply",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -58,43 +40,6 @@
 			{
 				"inputs": [
 					{
-						"internalType": "string",
-						"name": "id",
-						"type": "string"
-					},
-					{
-						"internalType": "string[]",
-						"name": "links",
-						"type": "string[]"
-					}
-				],
-				"name": "avail",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "availers",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "availer",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
@@ -108,16 +53,6 @@
 						"type": "string"
 					},
 					{
-						"internalType": "string",
-						"name": "title",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "description",
-						"type": "string"
-					},
-					{
 						"internalType": "uint256",
 						"name": "amount",
 						"type": "uint256"
@@ -128,14 +63,14 @@
 						"type": "address"
 					},
 					{
-						"internalType": "bool",
-						"name": "isAvailed",
-						"type": "bool"
-					},
-					{
 						"internalType": "address",
 						"name": "availer",
 						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "SubmissionTime",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -147,21 +82,6 @@
 						"internalType": "string",
 						"name": "id",
 						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "title",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "description",
-						"type": "string"
-					},
-					{
-						"internalType": "string[]",
-						"name": "links",
-						"type": "string[]"
 					},
 					{
 						"internalType": "uint256",
@@ -203,11 +123,11 @@
 	},
 	"sources": {
 		"contracts/users/users_info.sol": {
-			"keccak256": "0xf6e0135d4a811cb73a049a604a36020230d886ae66b8afa3b486ce1ea37b2039",
+			"keccak256": "0x04eb0f51c12fe324fb79442cfcd0eca56c858a378993520cd9afec6918201641",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://1b95a02aca15e16cec3a8684213d7cce60d75b1c4f02411040b9e4775bd34dab",
-				"dweb:/ipfs/QmYG2rnzRjN9ifQ5Ltheuq5AeinZQoNn4CjGXnvCrtYxPx"
+				"bzz-raw://4d68bd8f14b8a3739b1d5a1ff6bff07490f7b51a915c8d98e9a0a033c32d7576",
+				"dweb:/ipfs/QmX6gaXLGcSrDzffkgX2KrFbu9aVJk26XoQM9m9gndBThz"
 			]
 		}
 	},
