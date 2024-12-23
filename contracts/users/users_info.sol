@@ -12,6 +12,7 @@ contract users_info {
         uint256 amount;         
         address creator;     
         address availer;
+        bool isAvailed;
         address[] applicants;
         uint256 SubmissionTime;
     }
@@ -33,6 +34,7 @@ contract users_info {
         newBounty.amount = amount;
         newBounty.creator = msg.sender;
         newBounty.availer = address(0);
+        newBounty.isAvailed = false;
         newBounty.SubmissionTime = 0;
 
         BountyIdToIndex[id] = bounties.length;
@@ -45,7 +47,6 @@ contract users_info {
         string memory id
     ) public {
 
-            
         require(BountyIdToIndex[id] != 0, "Bounty does not exist");
 
         uint256 index = BountyIdToIndex[id] - 1;
@@ -56,5 +57,18 @@ contract users_info {
 
     }
 
+    function assign(
+        string memory id,
+        address applicant
+    ) public {
+        require(BountyIdToIndex[id] != 0, "Bounty does not exist");
+        require(bounties[BountyIdToIndex[id]-1].isAvailed == false, "Bounty is already availed");
+
+        uint256 index = BountyIdToIndex[id] - 1;
+        Bounties storage bounty = bounties[index];
+
+        bounty.availer = applicant;
+        bounty.isAvailed = true;
+    }
 
 }
