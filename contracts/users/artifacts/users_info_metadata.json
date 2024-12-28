@@ -45,7 +45,7 @@
 						"type": "string"
 					},
 					{
-						"internalType": "address",
+						"internalType": "address payable",
 						"name": "applicant",
 						"type": "address"
 					}
@@ -76,19 +76,39 @@
 						"type": "uint256"
 					},
 					{
-						"internalType": "address",
+						"internalType": "address payable",
 						"name": "creator",
 						"type": "address"
 					},
 					{
-						"internalType": "address",
+						"internalType": "address payable",
 						"name": "availer",
 						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "isAvailed",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "isSubmitted",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "deadline",
+						"type": "uint256"
 					},
 					{
 						"internalType": "uint256",
 						"name": "SubmissionTime",
 						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "isActive",
+						"type": "bool"
 					}
 				],
 				"stateMutability": "view",
@@ -100,14 +120,66 @@
 						"internalType": "string",
 						"name": "id",
 						"type": "string"
+					}
+				],
+				"name": "claim",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "id",
+						"type": "string"
 					},
 					{
 						"internalType": "uint256",
-						"name": "amount",
+						"name": "deadline",
 						"type": "uint256"
 					}
 				],
 				"name": "create",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "id",
+						"type": "string"
+					}
+				],
+				"name": "refund",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "id",
+						"type": "string"
+					}
+				],
+				"name": "release",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "id",
+						"type": "string"
+					}
+				],
+				"name": "submit",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -141,11 +213,11 @@
 	},
 	"sources": {
 		"contracts/users/users_info.sol": {
-			"keccak256": "0x0e67c14aebd1dfcfd55cb751d29f680b2c346637323789aa8a5608496b08b7ad",
+			"keccak256": "0x21f5201d8b9148934fcfba7c901ca137d12b7abd87dc6ce6096628017a39358e",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://bae2c0a9be9de0d0dafe80e41870b94530ab2858f79da359cc3d1df55c5eb4d4",
-				"dweb:/ipfs/QmPEqqE2u3RNuVPkeNPtkV4MBta3Yh5sv8U1CFaZC97SU8"
+				"bzz-raw://0b51dec77eede77621de54e5567284d15028cdc7549182bdf346e80172bdf147",
+				"dweb:/ipfs/QmaCnheKsPKUpUJocZ7iWpGyaNwu8fpugqQe3SKj85adRa"
 			]
 		}
 	},
